@@ -2,6 +2,43 @@
   {
     "uid": 1,
     "hashId": "uPNq2hg9",
-    "name": "roleecorn"
+    "name": "roleecorn",
+    "image": "images/players/1.png"
+  },
+  {
+    "uid": 2,
+    "hashId": "yuapP54F",
+    "name": "格林",
+    "image": "images/players/2.png"
+  },
+  {
+    "uid": 3,
+    "hashId": "lWbQdEW5",
+    "name": "風揚",
+    "image": "images/players/3.png"
+  },
+  {
+    "uid": 4,
+    "hashId": "kJlBMX3M",
+    "name": "旁白",
+    "image": "images/players/4.png"
+  },
+  {
+    "uid": 5,
+    "hashId": "wZ-yH_pW",
+    "name": "卡奧斯",
+    "image": "images/players/5.png"
+  },
+  {
+    "uid": 6,
+    "hashId": "f6LUgnmm",
+    "name": "EE",
+    "image": "images/players/6.png"
+  },
+  {
+    "uid": 7,
+    "hashId": "IYgbsXq2",
+    "name": "藍風",
+    "image": "images/players/7.png"
   }
 ]

@@ -1,0 +1,2 @@
+# Internal rollback directories created while replacing a submission.
+*.backup-*/

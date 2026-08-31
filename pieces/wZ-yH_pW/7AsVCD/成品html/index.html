@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <link href="aa.css" rel="stylesheet" />
+  <title>即使如此开学仍会到来。</title>
+</head>
+<body>
+<div class="main">
+
+<!-- 导航栏 -->
+<div class="koma">
+<div class="aa" id="indexContainer"><br>
+　 ┏━━━───　  ┏━━━───　  ┏━━━───　  ┏━━━───　  ┏━━━───　  ┏━━━───<br>
+　 ┃<button class="aa btn" data-volume="1">　   第１卷   　 </button>┃ ┃<button class="aa btn" data-volume="2">　   第２卷   　 </button>┃ ┃<button class="aa btn" data-volume="3">　   第３卷   　 </button>┃ ┃<button class="aa btn" data-volume="4">　   第４卷   　 </button>┃ ┃<button class="aa btn" data-volume="5">　   第５卷   　 </button>┃ ┃<button class="aa btn" data-volume="6">　   第６卷   　 </button>┃<br>
+　　  ───━━━┛　  ───━━━┛　  ───━━━┛　  ───━━━┛　  ───━━━┛　  ───━━━┛<br>
+</div>
+</div>
+
+<!-- 分卷栏 -->
+<main class="viewer-container">
+    <iframe id="docViewer" src=""></iframe>
+</main>
+
+</div>
+</body>
+
+<!-- 脚本 -->
+<script>
+    const iframe = document.getElementById('docViewer');
+	const volContainer = document.getElementById('indexContainer');
+	const getVolumeUrl = (volIndex) => `volume${volIndex}.html`;
+	let currentVolume = 1;
+
+    // 载入指定页
+    function loadVolume(vol) {
+      currentVolume = vol;
+      iframe.src = getVolumeUrl(currentVolume);
+      updateControls();
+    }
+	
+	// 更新按钮高亮
+    function updateControls() {
+      const volButtons = volContainer.querySelectorAll('.aa.btn');
+      volButtons.forEach(btn => {
+        const volNum = parseInt(btn.dataset.volume, 10);
+        btn.classList.toggle('active', volNum === currentVolume);
+      });
+    }
+	
+	// 初始化
+    function initPagination() {
+	  // 遍历按钮
+	  const volButtons = volContainer.querySelectorAll('.aa.btn');
+	  volButtons.forEach(btn => {
+		const volNum = parseInt(btn.dataset.volume, 10);
+		btn.addEventListener('click', () => loadVolume(volNum));
+	  });
+	
+      // 默认加载第 1 页
+      loadVolume(1);
+    }
+
+    // 页面加载完成后初始化
+    document.addEventListener('DOMContentLoaded', initPagination);
+</script>
+
+</html>

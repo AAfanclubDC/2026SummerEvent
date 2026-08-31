@@ -1,0 +1,129 @@
+@font-face {
+    font-family: "Saitamaar";
+    src: url("Saitamaar.woff2") format("woff2");
+}
+body {
+    padding: 0;
+    margin:0;
+    line-height: 1.5;
+    font-size: 14px;
+    font-family: "游ゴシック Medium",YuGothic,YuGothicM,"Hiragino Kaku Gothic ProN","Hiragino Kaku Gothic Pro",メイリオ,Meiryo,sans-serif;
+    background-color: #fcfcfc;
+}
+h1 {
+	font-family: 'Saitamaar';
+    font-size: 25px;
+	font-weight: bold;
+    margin: 0;
+    padding: 8px 4px 0px 8px;
+    font-weight: normal;
+    line-height: 1;
+	padding-left: 40px;
+    height: 30px;
+    background-color: #3c3c3c;
+    border-top: solid #DCDFE6 1px;
+    border-bottom: solid #DCDFE6 1px;
+    color: #d9d9d9;
+}
+.koma {
+    margin: 0 0 -1px 0;
+    border-top: solid 1px #ccc;
+    border-bottom: solid 1px #ccc;
+}
+.koma_header a {
+    font-size: 12px;
+    padding: 2px 0.7em 2px 0.5em;
+    color: #666;
+    vertical-align: top;
+    border-top: solid 01px #f0f0f0;
+    border-bottom: solid 1px #ccc;
+    border-right: solid 1px #ccc;
+    background-color: #f0f0f0;
+}
+.aa {
+    font-family: 'Saitamaar';
+    font-weight: normal;
+    font-size: 21px;
+    line-height: 23px;
+    white-space: pre;
+    overflow: auto;
+    white-space:nowrap;
+    background-color: #fcfcfc;
+	padding-left: 21px;
+}
+
+.aa.btn {
+    border: none;
+	padding-left: 0px;
+    padding-right: 0px;
+}
+.aa.btn:hover {
+    background-color: #d9d9d9;
+}
+.aa.btn:active {
+    color: #d9d9d9;
+	background-color: #3c3c3c;
+}
+.aa.btn.back {
+}
+.aa.btn.pre {
+}
+.aa.btn.next {
+}
+
+.aa.unbtn {
+    border: none;
+	color: #d9d9d9;
+	padding-left: 0px;
+    padding-right: 0px;
+}
+.aa.unbtn:hover {
+    background-color: #3c3c3c;
+}
+.aa.unbtn:active {
+	background-color: #941723;
+}
+
+.viewer-container {
+  flex: 1;
+  width: 100%;
+  height: calc(100vh - 110px);
+}
+
+.viewer-container iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background: #ffffff;
+}
+
+#epsisodeButton {
+	font-size: 23px;
+    line-height: 25px;
+	padding-left: 60px;
+	padding-right: 60px;
+}
+
+
+/* 1. 定义整个滚动条的宽度（变宽） */
+::-webkit-scrollbar {
+    width: 30px;      /* 垂直滚动条宽度（默认一般是 6~12px，改成 20px 就会明显变大） */
+}
+
+/* 2. 定义轨道（滚动条的背景槽） */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;   /* 浅灰色背景 */
+    border-radius: 10px;
+}
+
+/* 3. 定义滑块（那个可以用鼠标拖动的“按钮”部分） */
+::-webkit-scrollbar-thumb {
+    background: #888;      /* 滑块颜色 */
+    border-radius: 10px;
+    border: 3px solid #f1f1f1; /* 内边距效果，让滑块看起来有呼吸感 */
+}
+
+/* 4. 鼠标悬停时滑块变深，增加交互反馈 */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}

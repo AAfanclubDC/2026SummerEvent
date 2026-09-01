@@ -2,42 +2,43 @@
   {
     "uid": 1,
     "hashId": "yuapP54F",
-    "name": "格林",
+    "name": "A組",
     "image": "images/players/2.png"
   },
   {
     "uid": 2,
     "hashId": "jsbg8mi8",
-    "name": "Pintbox",
+    "name": "B組",
     "image": "images/players/3.png"
   },
   {
     "uid": 3,
     "hashId": "kJlBMX3M",
-    "name": "旁白",
+    "name": "E組",
     "image": "images/players/4.png"
   },
   {
     "uid": 4,
     "hashId": "wZ-yH_pW",
-    "name": "卡奧斯",
+    "name": "F組",
     "image": "images/players/5.png"
   },
   {
     "uid": 5,
     "hashId": "uPNq2hg9",
-    "name": "檸檬"
+    "name": "G組",
+    "image": "images/players/8.png"
   },
   {
     "uid": 6,
     "hashId": "f6LUgnmm",
-    "name": "EE",
+    "name": "H組",
     "image": "images/players/6.png"
   },
   {
     "uid": 7,
     "hashId": "IYgbsXq2",
-    "name": "藍風",
+    "name": "I組",
     "image": "images/players/7.png"
   }
 ]

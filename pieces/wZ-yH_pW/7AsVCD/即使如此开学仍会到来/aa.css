@@ -104,6 +104,15 @@ h1 {
 	padding-right: 60px;
 }
 
+.top-nav {
+  position: fixed;      /* 固定定位 */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;        /* 确保在其他元素上方 */
+  background: #fff;     /* 避免透明露出下方内容 */
+}
+
 
 /* 1. 定义整个滚动条的宽度（变宽） */
 ::-webkit-scrollbar {

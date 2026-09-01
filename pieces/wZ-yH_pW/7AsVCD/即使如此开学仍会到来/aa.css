@@ -12,14 +12,14 @@ body {
 }
 h1 {
 	font-family: 'Saitamaar';
-    font-size: 25px;
+    font-size: 23px;
 	font-weight: bold;
     margin: 0;
     padding: 8px 4px 0px 8px;
     font-weight: normal;
     line-height: 1;
 	padding-left: 40px;
-    height: 30px;
+    height: 26px;
     background-color: #3c3c3c;
     border-top: solid #DCDFE6 1px;
     border-bottom: solid #DCDFE6 1px;
@@ -43,8 +43,8 @@ h1 {
 .aa {
     font-family: 'Saitamaar';
     font-weight: normal;
-    font-size: 21px;
-    line-height: 23px;
+    font-size: 18px;
+    line-height: 20px;
     white-space: pre;
     overflow: auto;
     white-space:nowrap;
@@ -98,8 +98,8 @@ h1 {
 }
 
 #epsisodeButton {
-	font-size: 23px;
-    line-height: 25px;
+	font-size: 21px;
+    line-height: 23px;
 	padding-left: 60px;
 	padding-right: 60px;
 }
